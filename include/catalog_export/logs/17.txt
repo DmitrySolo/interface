@@ -1,0 +1,16 @@
+<pre>[Bitrix\Main\ObjectPropertyException] 
+Object property &quot;dateTimeFormat&quot; not found. (100)
+/var/www/podpolkovnyk/data/www/santehsmart.ru/bitrix/modules/main/lib/context/culture.php:55
+#0: Bitrix\Main\Context\Culture-&gt;getDateTimeFormat()
+	/var/www/podpolkovnyk/data/www/santehsmart.ru/bitrix/modules/currency/lib/currencymanager.php:243
+#1: Bitrix\Currency\CurrencyManager::getDatetimeExpressionTemplate()
+	/var/www/podpolkovnyk/data/www/santehsmart.ru/bitrix/modules/currency/general/currency.php:500
+#2: CAllCurrency::__GetList(string, string, NULL)
+	/var/www/podpolkovnyk/data/www/santehsmart.ru/bitrix/modules/currency/general/currency.php:456
+#3: CAllCurrency::GetList(string, string)
+	/var/www/podpolkovnyk/data/www/santehsmart.ru/bitrix/modules/catalog/load/csv_run.php:406
+#4: require(string)
+	/var/www/podpolkovnyk/data/www/santehsmart.ru/bitrix/php_interface/include/catalog_export/csv_run.php:3
+#5: include(string)
+	/var/www/podpolkovnyk/data/www/santehsmart.ru/bitrix/php_interface/include/catalog_export/cron_frame.php:39
+</pre>
